@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		E05CC13F24C938B000D575EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05CC13E24C938B000D575EC /* AppDelegate.swift */; };
 		E05CC14124C938B000D575EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05CC14024C938B000D575EC /* SceneDelegate.swift */; };
-		E05CC14324C938B000D575EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05CC14224C938B000D575EC /* ViewController.swift */; };
+		E05CC14324C938B000D575EC /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05CC14224C938B000D575EC /* MusicListViewController.swift */; };
 		E05CC14624C938B000D575EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E05CC14424C938B000D575EC /* Main.storyboard */; };
 		E05CC14824C938B200D575EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05CC14724C938B200D575EC /* Assets.xcassets */; };
 		E05CC14B24C938B200D575EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E05CC14924C938B200D575EC /* LaunchScreen.storyboard */; };
+		E05CC15624C939C000D575EC /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E05CC15324C939BF00D575EC /* song1.mp3 */; };
+		E05CC15724C939C000D575EC /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E05CC15424C939C000D575EC /* song2.mp3 */; };
+		E05CC15824C939C000D575EC /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E05CC15524C939C000D575EC /* song3.mp3 */; };
+		E05CC15A24C93D8200D575EC /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05CC15924C93D8200D575EC /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E05CC13B24C938B000D575EC /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05CC13E24C938B000D575EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E05CC14024C938B000D575EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E05CC14224C938B000D575EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E05CC14224C938B000D575EC /* MusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
 		E05CC14524C938B000D575EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E05CC14724C938B200D575EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E05CC14A24C938B200D575EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E05CC14C24C938B200D575EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E05CC15324C939BF00D575EC /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
+		E05CC15424C939C000D575EC /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
+		E05CC15524C939C000D575EC /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
+		E05CC15924C93D8200D575EC /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		E05CC13D24C938B000D575EC /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				E05CC15B24C940D200D575EC /* Audio */,
 				E05CC13E24C938B000D575EC /* AppDelegate.swift */,
 				E05CC14024C938B000D575EC /* SceneDelegate.swift */,
-				E05CC14224C938B000D575EC /* ViewController.swift */,
+				E05CC14224C938B000D575EC /* MusicListViewController.swift */,
 				E05CC14424C938B000D575EC /* Main.storyboard */,
 				E05CC14724C938B200D575EC /* Assets.xcassets */,
 				E05CC14924C938B200D575EC /* LaunchScreen.storyboard */,
 				E05CC14C24C938B200D575EC /* Info.plist */,
+				E05CC15924C93D8200D575EC /* PlayerViewController.swift */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		E05CC15B24C940D200D575EC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E05CC15324C939BF00D575EC /* song1.mp3 */,
+				E05CC15424C939C000D575EC /* song2.mp3 */,
+				E05CC15524C939C000D575EC /* song3.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +146,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05CC14B24C938B200D575EC /* LaunchScreen.storyboard in Resources */,
+				E05CC15824C939C000D575EC /* song3.mp3 in Resources */,
 				E05CC14824C938B200D575EC /* Assets.xcassets in Resources */,
 				E05CC14624C938B000D575EC /* Main.storyboard in Resources */,
+				E05CC15624C939C000D575EC /* song1.mp3 in Resources */,
+				E05CC15724C939C000D575EC /* song2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E05CC14324C938B000D575EC /* ViewController.swift in Sources */,
+				E05CC14324C938B000D575EC /* MusicListViewController.swift in Sources */,
+				E05CC15A24C93D8200D575EC /* PlayerViewController.swift in Sources */,
 				E05CC13F24C938B000D575EC /* AppDelegate.swift in Sources */,
 				E05CC14124C938B000D575EC /* SceneDelegate.swift in Sources */,
 			);
